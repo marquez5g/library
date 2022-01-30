@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Library</title>
+        <script type="text/javascript" charset="utf-8" src="script.js">
+        </script>
+    </head>
+    <body>
+        <main>
+            <form id="add-book"
+            onsubmit="addBook(form)"
+            action="" method="get" accept-charset="utf-8">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" value="" />
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" value="" />
+                <label for="year">Year</label>
+                <input type="number" name="year" id="year" value="" />
+                <label for="read">Read</label>
+                <input type="checkbox" name="read" id="read" />
+            <input type="submit" name="addBookButton" id="addBookButton" value="Add new book" />
+            </form>
+            <div class="container"id="container">
+            </div>
+        </main>
+    </body>
+</html>
