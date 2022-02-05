@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    --primary-color: #f7567c;
+    --secondary-color: #99E1D9;
+    --terciary-color: #5D576B;
+    --text-primary: #FFFAE3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lavender;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#add-book{
+    display: flex;
+    margin: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+    background-color: var(--primary-color);
+    height: 10vh;
+    width: 78vw;
+    gap: 0.5rem;
+}
+
+#add-book input{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+#add-book label{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+}
+
+#add-book .btn-primary{
+    background-color: var(--terciary-color);
+    font-weight: bold;
+    padding: unset;
+    color: white;
+    width: 3rem;
+}
+
+#add-book .btn-primary:hover{
+    background-color: var(--secondary-color);
+    color: var(--terciary-color);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book{
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    width: 8rem;
+    flex-direction: column;
+    background-color: var(--terciary-color);
+    color: var(--text-primary);
+    border-radius: 0.5rem;
+    gap: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.book div{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.book_title{
+    font-weight: 700;
+}
+
+.book_author{
+    font-size: small;
+}
+
+.book_year{
+    font-size: small;
+}
+
+.read{
+    opacity: 0.7;
+}
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--text-primary);
+}
